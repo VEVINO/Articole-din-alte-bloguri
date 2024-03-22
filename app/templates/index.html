@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articole</title>
+</head>
+<body>
+    <h1>Articole din alte bloguri</h1>
+    <ul>
+        {% for article in other_blog_articles %}
+        <li><a href="{{ article.url }}" target="https://www.itfactory.ro/all-courses/?gad_source=1&gclid=Cj0KCQjw2PSvBhDjARIsAKc2cgO1kw8usjN10c9cZHP5si80a_C2roS994vptkeng4ggUU6fLqmI8nUaAkIfEALw_wcB">{{ article.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="/add_article">Aici te poti documenta cand nu gasesti nici o solutie--></a>
+    <a href="https://www.google.com" target="_blank">Link către Google</a> <!-- Exemplu de redirecționare către alt site -->
+</body>
+</html>

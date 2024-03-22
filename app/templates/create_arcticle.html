@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creează Articol Nou</title>
+</head>
+<body>
+    <h1>Creează un articol nou</h1>
+    <form action="/create_article" method="POST">
+        <label for="title">Titlu:</label>
+        <input type="text" id="title" name="title" required><br>
+        <label for="content">Conținut:</label><br>
+        <textarea id="content" name="content" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Salvează">
+    </form>
+    <a href="/">Înapoi la pagina principală</a>
+</body>
+</html>
